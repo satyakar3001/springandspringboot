@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 	<bean id = "dev" class = "com.sattu.springApp.dev"> -->
+<!-- 	<property name = "age" value = "12"></property> -->
+<!-- 	<constructor-arg value = "14"/> -->
+<!-- 	<constructor-arg ref = "laptopOne"/> -->
+<!-- 	<property name = "laptop" ref = "laptopOne" /> -->
+<!-- 	</bean> -->
+	
+	<bean id = "computer" class = "com.sattu.springApp.dev2forAutowiring" autowire = "byType">
+
+	</bean>
+
+	<bean id = "Laptop" class = "com.sattu.springApp.Laptop" primary = "true"></bean>
+	<bean id = "desktopOne" class = "com.sattu.springApp.Desktop"></bean>
+		
+	
+</beans>
